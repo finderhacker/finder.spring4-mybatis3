@@ -32,7 +32,7 @@ public class MyBatisTestBySpringTestFramework {
 
 	@Test
 	public void testGetUserById() {
-		String userId = "2e31f3ccfbf14369917f373ffe51a98d";
+		String userId = "737a8ad963894165b9ae22fee91eb725";
 		TestUser user = testUserService.getUserById(userId);
 		System.out.println(user.getUserName());
 	}

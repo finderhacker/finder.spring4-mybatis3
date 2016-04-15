@@ -19,13 +19,11 @@ import me.finder.service.ITestUserService;
  * 
  * @author finder
  * @WebServlet是Servlet3.0提供的注解，
- * 目的是将一个继承了HttpServlet类的普通java类标注为一个Servlet TestUserServlet使用了@WebServlet标注之后，
- *                                                                       就不需要在web
- *                                                                       .
- *                                                                       xml中配置了
+ * 目的是将一个继承了HttpServlet类的普通java类标注为一个Servlet TestUserServlet
+ * 使用了@WebServlet标注之后，就不需要在web.xml中配置了
  *
  */
-@WebServlet("/testUserServlet")
+//@WebServlet("/testUserServlet")
 public class TestUserServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;

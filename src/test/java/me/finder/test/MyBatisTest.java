@@ -1,6 +1,8 @@
 package me.finder.test;
 
 import java.util.Date;
+import java.util.List;
+import java.util.Random;
 import java.util.UUID;
 
 import org.junit.Before;
@@ -35,10 +37,18 @@ public class MyBatisTest {
 		// ac.getBean("testUserService");
 		TestUser user = new TestUser();
 		user.setUserId(UUID.randomUUID().toString().replaceAll("-", ""));
-		user.setUserName("seeker");
+		user.setUserName(UUID.randomUUID().toString().substring(0, 6)+"_finder");
 		user.setUserBirthday(new Date());
-		user.setUserSalary(10000D);
+		user.setUserSalary(new Random().nextDouble());
 		testUserService.addUser(user);
+	}
+	
+	@Test
+	public void testGetAllUser(){
+		List<TestUser> list = testUserService.getAllUser();
+		for( TestUser tu : list ){
+			System.out.println(tu.toString());
+		}
 	}
 
 }

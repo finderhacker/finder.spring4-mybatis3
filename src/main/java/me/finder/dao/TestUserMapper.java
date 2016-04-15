@@ -1,6 +1,7 @@
 package me.finder.dao;
 
-import com.sun.tools.javac.util.List;
+
+import java.util.List;
 
 import me.finder.model.TestUser;
 

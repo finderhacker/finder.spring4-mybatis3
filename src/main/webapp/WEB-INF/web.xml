@@ -6,7 +6,17 @@
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
-
+	<servlet>
+		<description>
+		</description>
+		<display-name>testUserServlet</display-name>
+		<servlet-name>testUserServlet</servlet-name>
+		<servlet-class>me.finder.web.controller.TestUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>testUserServlet</servlet-name>
+		<url-pattern>/testUserServlet</url-pattern>
+	</servlet-mapping>
     <listener>
         <description>SpringListener</description>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
